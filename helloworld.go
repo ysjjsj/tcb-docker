@@ -9,7 +9,7 @@ import (
 
 func handler(w http.ResponseWriter, r *http.Request) {
 	log.Print("Hello world received a request.")
-	target := "Welcome to CloudBase"
+	target := "Hello world!!!"
 	fmt.Fprintf(w, "Hello, %s!\n", target)
 
 	path := "/tmp/tcb/aaaa.log"
