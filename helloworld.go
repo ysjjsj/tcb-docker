@@ -9,12 +9,12 @@ import (
 
 func handler(w http.ResponseWriter, r *http.Request) {
 	log.Print("Hello world received a request.")
-	target := "Welcome to CloudBase"
+	target := "你好，恒娟"
 	fmt.Fprintf(w, "Hello, %s!\n", target)
 
 	path := "/tmp/tcb/aaaa.log"
  	fp, fpErr := os.OpenFile(path, os.O_APPEND|os.O_CREATE, 0666)
-	fp.WriteString("Welcome to CloudBase")
+	fp.WriteString("你好，恒娟")
 
 	if fpErr != nil {
 		fp.WriteString("fp.WriteString failed.")
